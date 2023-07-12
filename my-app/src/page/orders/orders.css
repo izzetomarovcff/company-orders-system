@@ -1,0 +1,125 @@
+body{
+    overflow-x: hidden;
+}
+table,th,td {
+    text-align: center;
+    padding: 20px 5px;
+}
+table{
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+}
+tr:first-child{
+    position: sticky;
+    top: 90px;
+    border-bottom: 2px solid #35A29F;
+    color: #35A29F;
+    background-color: white;
+}
+th{
+    padding-bottom: 20px;
+}
+tr:hover {
+    background-color: #f5f7fa;
+}
+tr:first-child:hover{
+    background-color: white;
+}
+tr{
+    border-bottom: 0.5px solid silver;
+}
+td{
+    font-size: 14px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    justify-content: space-around;
+}
+.editdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+.editdiv:hover{
+    background-color: #46db0f;
+    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.40);
+}
+.edit{
+    width: 20px;
+}
+.delete:hover{
+ background-color: #f50713;
+ box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.40);
+}
+.solidbackground{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 45%;
+    z-index: 1000;
+    background-color: black;
+}
+.viewform{
+    position: absolute;
+    top: 5px;
+    z-index: 1003;
+    opacity: 100%;
+}
+.editwindow{
+    position:fixed;
+    width: 90%;
+    z-index: 1001;
+    top: -5px;
+    left: 400px;
+    
+}
+.visible{
+    max-height: 600px;
+    overflow-y:scroll;
+    
+    background-color: white;
+}
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+.headerv1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:0px;
+    background-color: white;
+}
+.headerv2{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.closevindovv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.closevindovv:hover{
+    filter: drop-shadow(0px 0px 2px red);
+}
+.closevindovv img{
+    width: 20px;
+}
